@@ -31,7 +31,7 @@ Modify the image contrast by creating two higher contrast images using scaling f
 Display the original, lower contrast, and higher contrast images.
 
 ### Step 5:
-Split the image (boy.jpg) into B, G, R components and display the channels
+Split the image into B, G, R components and display the channels
 
 ## Program Developed By:
 - **Name:** Lorena Avelyn R
@@ -39,11 +39,11 @@ Split the image (boy.jpg) into B, G, R components and display the channels
 
 ## Ex. No. 01
 
-#### 1. Read the image ('Eagle_in_Flight.jpg') using OpenCV imread() as a grayscale image.
+#### 1. Read the image using OpenCV imread() as a grayscale image.
 ```python
 import cv2
 import matplotlib.pyplot as plt
-img=cv2.imread('Eagle.jpg')
+img=cv2.imread('Ip2.jpg')
 img_rgb = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 ```
 
@@ -64,16 +64,16 @@ plt.axis("off")
 
 #### 4. Save the image as a PNG file using OpenCV imwrite().
 ```python
-img=cv2.imread('Eagle.jpg')
-cv2.imwrite('Eagle1.png',img)
+img=cv2.imread('Ip2.jpg')
+cv2.imwrite('Ip2.png',img)
 ```
 
 #### 5. Read the saved image above as a color image using cv2.cvtColor().
 ```python
 # Read the image using OpenCV
-img = cv2.imread('Eagle.jpg', cv2.IMREAD_COLOR)
+img = cv2.imread('Ip2', cv2.IMREAD_COLOR)
 # Change it to colour image
-img=cv2.imread('Eagle.jpg')
+img=cv2.imread('Ip2.jpg')
 img_rgb = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 ```
 
@@ -114,10 +114,10 @@ plt.title("Flipped Horizontally")
 plt.axis("off")
 ```
 
-#### 10. Read in the image ('Apollo-11-launch.jpg').
+#### 10. Read in the image.
 ```python
 # Read the image using OpenCV
-img_app = cv2.imread('Apollo.jpg', cv2.IMREAD_COLOR)
+img_app = cv2.imread('Ip2.jpg', cv2.IMREAD_COLOR)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 img_rgb.shape
 ```
@@ -144,9 +144,9 @@ plt.imshow(img_rgb)
 plt.show()
 ```
 
-#### 14. Read the image ('Boy.jpg').
+#### 14. Read the image.
 ```python
-img =cv2.imread('boy.jpg',cv2.IMREAD_COLOR)
+img =cv2.imread('Ip2.jpg',cv2.IMREAD_COLOR)
 img_rgb= cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
 ```
 
@@ -233,23 +233,23 @@ plt.show()
 
 1.Read 'Eagle_in_Flight.jpg' as grayscale and display:
 
-<img width="663" height="498" alt="image" src="https://github.com/user-attachments/assets/51c296ff-a55e-452e-bd1c-248ddcaa6544" />
+<img width="606" height="422" alt="Screenshot 2026-11-01 003829" src="https://github.com/user-attachments/assets/949fd0e4-2e02-4b30-b66a-d643bb313e39" />
 
 2.Save image as PNG and display:
 
-<img width="642" height="502" alt="image" src="https://github.com/user-attachments/assets/5941ee91-c532-49d3-8b30-9b7d411b80d6" />
+<img width="732" height="417" alt="Screenshot 2026-11-01 004526" src="https://github.com/user-attachments/assets/fdd54cfa-7bb5-40ac-84fa-11edb058cc09" />
 
 3.Cropped image:
 
-<img width="383" height="466" alt="image" src="https://github.com/user-attachments/assets/47383025-6bfe-482b-8196-5ac8f8c50c86" />
+<img width="555" height="418" alt="Screenshot 2026-11-01 004757" src="https://github.com/user-attachments/assets/a64c4699-c4dd-4671-ae4d-cf42cc4f9b55" />
 
 4.Resize and flip Horizontally:
 
-<img width="625" height="502" alt="image" src="https://github.com/user-attachments/assets/858a3898-0c6c-4c93-8347-9c06c583865e" />
+<img width="695" height="412" alt="Screenshot 2026-11-01 004848" src="https://github.com/user-attachments/assets/bd78a73c-6864-4412-8051-3276aab6be80" />
 
 5.Read 'Apollo-11-launch.jpg' and Display the final annotated image:
 
-<img width="693" height="405" alt="image" src="https://github.com/user-attachments/assets/4299af6a-cdac-4f28-95a3-97c9ee543388" />
+<img width="693" height="442" alt="Screenshot 2026-11-01 004946" src="https://github.com/user-attachments/assets/0fa4e10e-edb5-458e-a668-1d8cf31e14ca" />
 
 ### **ii)** Adjust Image Brightness.
 
